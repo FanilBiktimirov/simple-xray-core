@@ -189,7 +189,7 @@ sni=$(jq -r '.inbounds[1].streamSettings.realitySettings.serverNames[0]' /usr/lo
 ip=$(timeout 3 curl -4 -s icanhazip.com)
 link="$protocol://$uuid@$ip:$port?security=reality&path=%2F&host=&mode=auto&sni=$sni&fp=firefox&pbk=$pbk&sid=$sid&spx=%2F&type=xhttp&encryption=none#vless-$ip"
 echo ""
-echo "Ссылка для подключения:"
+echo "Ссылка для подключения":
 echo "$link"
 echo ""
 echo "QR-код:"
@@ -316,7 +316,7 @@ mainuser
 
 # Создаем файл с подсказками
 touch $HOME/help
-cat << EOF > $HOME/help
+cat << 'EOF' > $HOME/help
 
 Команды для управления пользователями Xray:
 
