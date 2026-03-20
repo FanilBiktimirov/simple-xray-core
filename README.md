@@ -34,3 +34,17 @@ curl -fsSL https://raw.githubusercontent.com/FanilBiktimirov/simple-xray-core/ma
 - `userlist` - показать список пользователей
 
 Подсказки после установки также сохраняются в файл `~/help`.
+
+## Полное удаление
+
+Для удаления `Xray-core` и файлов, созданных этим скриптом, выполните:
+
+```bash
+rm -f /usr/local/etc/xray/config.json
+rm -f /usr/local/etc/xray/.keys
+rm -f /usr/local/bin/userlist
+rm -f /usr/local/bin/mainuser
+rm -f /usr/local/bin/newuser
+rm -f /usr/local/bin/rmuser
+rm -f /usr/local/bin/sharelink
+```
